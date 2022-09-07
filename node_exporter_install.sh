@@ -1,15 +1,17 @@
 #!/bin/bash
-#Bash script for installing node_exporter, downloads version 1.3.1, extracts it, creates a service user, and creates a systemd unit file
+#Bash script for installing node_exporter, downloads version 1.4.0, extracts it, creates a 
+service user, and creates a systemd unit file
 
-echo "Downloading Node Exporter v1.3.1"
+echo "Downloading Node Exporter v1.4.0"
 
-wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
+wget 
+https://github.com/prometheus/node_exporter/releases/download/v1.4.0-rc.0/node_exporter-1.4.0-rc.0.linux-amd64.tar.gz
 echo "Extracting Node Exporter"
-tar -xvf node_exporter-1.3.1.linux-amd64.tar.gz
+tar -xvf node_exporter-1.4.0-rc.0.linux-amd64.tar.gzz
 
 echo "Moving Node Exporter binary"
 
-cd node_exporter-1.3.1.linux-amd64
+cd node_exporter-1.4.0-rc.0.linux-amd64.tar.gz
 sudo cp node_exporter /usr/local/bin/
 
 echo "Adding node_exporter service account"
